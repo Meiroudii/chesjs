@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+   }
+
+#gameboard {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  background: burlywood;
+}
+
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+}
+
+.beige {
+  background: burlywood;
+}
+
+.brown {
+  background: brown;
+}
