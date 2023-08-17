@@ -20,12 +20,22 @@ function createBoard() {
     square.classList.add('square');
     square.innerHTML = startPiece;
     square.setAttribute('square-id', i);
-    // square.classList.add('beige');
     
     // Math rows
-    const row = Math.floor( 63 - i / 8) + 1;
+    const row = Math.floor( (63 - i) / 8) + 1;
     if (row % 2 == 0) {
-      square.classList.add()
+      square.classList.add(i % 2 === 0 ? "beige" : "brown");
+    }
+    else {
+      square.classList.add(i % 2 === 0 ? "brown" : "beige");
+    }
+    // SVG fill color "black" and "white" 
+    if (i <= 15) {
+      square.firstChild.firstChild.classList.add("black");
+    }
+
+    if (i >= 48) {
+      square.firstChild.firstChild.classList.add("white");
     }
     gameBoard.append(square);
   });

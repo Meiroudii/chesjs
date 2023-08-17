@@ -30,3 +30,11 @@
 .brown {
   background: brown;
 }
+
+.black {
+  fill: rgb(28,28,28);
+}
+
+.white {
+  fill: rgb(255,255,255);
+}
